@@ -9,8 +9,6 @@ number = (input('Введите число: '))
 if float(number) > 1.0:
     num = number.replace('.', '', 1)
     a = int(float(number))
-    #after = len(number) - len(str(a)) - 1
-    #before = len(str(num))
     print('Формат с плавающей точкой: 0.' + str(num) + ' * 10 ** ' + str(len(str(a))))
 elif float(number) < 1.0:
     num = number.strip('0.')
